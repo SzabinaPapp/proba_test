@@ -16,6 +16,13 @@ body {
 	width: 30%;
 	z-index: 3;
 
+	.custom-toggler .navbar-toggler-icon {
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(239,213,146)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	}
+	.custom-toggler.navbar-toggler {
+  	border-color: rgb(239, 213, 146);
+	}
+	
 	.navbar {
 		position: absolute;
 		float: right;
@@ -31,13 +38,17 @@ body {
 			height: 60px;
 			width: 60px;
 		}
-		 
+
 		&-toggler {
 			position: absolute;
 			left: 50%;
 			transform: translate(-50%);
 			border: none;
 			outline: none;
+
+			&.custom.toggler {
+				border: green;
+			}
 
 			&-icon {
 				width: 2.5em;
@@ -48,7 +59,7 @@ body {
 					height: 2em;
 				}
 			}
-		}
+		} 
 	}
 }
 .app {

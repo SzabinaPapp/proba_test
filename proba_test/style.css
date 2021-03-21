@@ -36,6 +36,13 @@ body {
   border-radius: 50px;
 }
 
+@media screen and (max-width: 768px) {
+  .hamburger .navbar {
+    height: 60px;
+    width: 60px;
+  }
+}
+
 .hamburger .navbar-toggler {
   position: absolute;
   left: 50%;
@@ -48,6 +55,13 @@ body {
 .hamburger .navbar-toggler-icon {
   width: 2.5em;
   height: 2.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger .navbar-toggler-icon {
+    width: 2em;
+    height: 2em;
+  }
 }
 
 .app {
@@ -64,6 +78,25 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+@media screen and (max-width: 768px) {
+  .app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 453px) {
+  .app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .app .first-container,
 .app .second-container {
   -ms-flex-preferred-size: 50%;
@@ -75,11 +108,37 @@ body {
   height: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .app .first-container,
+  .app .second-container {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 453px) {
+  .app .first-container,
+  .app .second-container {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    height: 50%;
+  }
+}
+
 .app .first-container h1,
 .app .second-container h1 {
   font-weight: 800;
   margin-top: 2em;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 453px) {
+  .app .first-container h1,
+  .app .second-container h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .app .first-container p,
@@ -89,10 +148,26 @@ body {
   line-height: 2em;
 }
 
+@media screen and (max-width: 453px) {
+  .app .first-container p,
+  .app .second-container p {
+    margin-bottom: 1em;
+    line-height: 1.5em;
+    width: 90%;
+  }
+}
+
 .app .first-container h6,
 .app .second-container h6 {
   font-weight: 700;
   letter-spacing: 3px;
+}
+
+@media screen and (max-width: 453px) {
+  .app .first-container h6,
+  .app .second-container h6 {
+    margin-bottom: 1em;
+  }
 }
 
 .app .second-container {

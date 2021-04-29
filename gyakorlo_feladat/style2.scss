@@ -44,7 +44,7 @@ body {
 			@media screen and (max-width: 768px) {
 				text-align: left;
 				font-size: 22px;
-				margin-left: 10px;
+				margin-left: 20px;
 				margin-top: 30px;
 				font-weight: 500;
 			}
@@ -107,7 +107,30 @@ body {
 	}
 }
 .card {
-	margin: 2em;
+	justify-content: left;
+	text-align: left;
+	width: 300px;
+	margin: 2.5em;
+	border: none;
+	border-radius: 0;
 	
+	#blackCard {
+		background-color: black;
+	}
+	h5 {
+		color: #FCB84C;
+		line-height: 1.5em;
+	}
+	#blackText {
+		color: black;
+	}
+	.card-footer {
+		background-color: #22B573;
+	}
+	.text-muted {
+		color: #FCB84C!important;
+		font-weight: bold;
+		font-size: 18px;
+	}
 }
 }

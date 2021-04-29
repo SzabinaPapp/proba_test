@@ -156,7 +156,8 @@ body .card {
   border-radius: 0;
 }
 
-body .card #blackCard {
+body .card #blackCard,
+body .card #videoCard {
   background-color: black;
 }
 
@@ -177,5 +178,20 @@ body .card .text-muted {
   color: #FCB84C !important;
   font-weight: bold;
   font-size: 18px;
+}
+
+body .card .fa {
+  font-size: 150px;
+  margin-top: 0.8em;
+}
+
+body .card #videoCard {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style2.css.map */

@@ -114,7 +114,8 @@ body {
 	border: none;
 	border-radius: 0;
 	
-	#blackCard {
+	#blackCard,
+	#videoCard {
 		background-color: black;
 	}
 	h5 {
@@ -132,6 +133,14 @@ body {
 		font-weight: bold;
 		font-size: 18px;
 	}
-	
+	.fa {
+		font-size: 150px;
+		margin-top: 0.8em;
+	}
+	#videoCard {
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
 }
 }

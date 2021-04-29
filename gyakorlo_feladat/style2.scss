@@ -135,12 +135,26 @@ body {
 	}
 	.fa {
 		font-size: 150px;
-		margin-top: 0.8em;
+		margin-top: 0.7em;
+
+		@media screen and (max-width: 453px) {
+			margin-top: 0;
+		}
 	}
 	#videoCard {
 		text-align: center;
 		justify-content: center;
 		align-items: center;
+
+		#videoText {
+			margin-left: -40%;
+			margin-top: 60%;
+			color: #FCB84C;
+
+			@media screen and (max-width: 453px) {
+				margin-top: 0;
+			}
+		}
 	}
 }
 }

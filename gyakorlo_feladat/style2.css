@@ -182,7 +182,13 @@ body .card .text-muted {
 
 body .card .fa {
   font-size: 150px;
-  margin-top: 0.8em;
+  margin-top: 0.7em;
+}
+
+@media screen and (max-width: 453px) {
+  body .card .fa {
+    margin-top: 0;
+  }
 }
 
 body .card #videoCard {
@@ -193,5 +199,17 @@ body .card #videoCard {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body .card #videoCard #videoText {
+  margin-left: -40%;
+  margin-top: 60%;
+  color: #FCB84C;
+}
+
+@media screen and (max-width: 453px) {
+  body .card #videoCard #videoText {
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=style2.css.map */
